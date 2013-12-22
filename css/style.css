@@ -1,0 +1,400 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300");
+@import url("http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700");
+@import url("normalize.css");
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  height: 390px;
+  color: white;
+  background: #e9e9e9; }
+  @media screen and (min-width: 1050px) {
+    header {
+      height: 799px; } }
+
+header .header-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  max-height: 799px;
+  min-height: 400px; }
+
+.header-inner {
+  width: 90%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1050px) {
+    .header-inner {
+      width: 60%; } }
+
+.titles {
+  padding-top: 40px; }
+
+.header-inner .titles .xmas-tree-top {
+  position: absolute;
+  background: white;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -37.5px;
+  top: 30px;
+  padding: 5px 20px;
+  width: 75px; }
+  @media screen and (min-width: 1050px) {
+    .header-inner .titles .xmas-tree-top {
+      margin-left: -58px;
+      top: 80px;
+      padding: 10px 35px;
+      width: auto; } }
+  .header-inner .titles .xmas-tree-top:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    border: 38px solid transparent;
+    border-bottom: 20px solid white;
+    top: -58px; }
+    @media screen and (min-width: 1050px) {
+      .header-inner .titles .xmas-tree-top:before {
+        border: 63px solid transparent;
+        border-bottom: 30px solid white;
+        top: -93px; } }
+  .header-inner .titles .xmas-tree-top:after {
+    content: "";
+    border: 38px solid transparent;
+    border-top: 20px solid white;
+    position: absolute;
+    bottom: -58px;
+    left: 0px; }
+    @media screen and (min-width: 1050px) {
+      .header-inner .titles .xmas-tree-top:after {
+        border: 63px solid transparent;
+        border-top: 30px solid white;
+        bottom: -93px; } }
+  .header-inner .titles .xmas-tree-top img {
+    display: block;
+    width: 100%;
+    max-width: 56px;
+    height: auto; }
+
+.title, .title-small, h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+  font-family: "Josefin Slab", serif;
+  font-weight: 300;
+  letter-spacing: -0.03em; }
+
+.title {
+  margin-top: 60px;
+  font-size: 200%; }
+  .title span {
+    display: block; }
+  @media screen and (min-width: 1050px) {
+    .title {
+      margin-top: 200px;
+      font-size: 300%; } }
+
+.titles .title-small {
+  position: relative;
+  margin: 20px auto 0;
+  width: 100%;
+  font-size: 155%; }
+  .titles .title-small:before, .titles .title-small:after {
+    content: url(../images/xmas-tree-white.png);
+    position: absolute;
+    top: 2px; }
+  .titles .title-small:before {
+    left: 0px; }
+  .titles .title-small:after {
+    right: 0px; }
+  @media screen and (min-width: 360px) {
+    .titles .title-small {
+      font-size: 200%;
+      width: 12em; } }
+
+.titles h1 {
+  text-transform: uppercase;
+  font-size: 222%;
+  border-bottom: 2px solid white;
+  width: 9em;
+  margin: 20px auto 0; }
+  .titles h1 span {
+    display: block;
+    margin-bottom: 3px;
+    border-bottom: 2px solid white; }
+  @media screen and (min-width: 520px) {
+    .titles h1 {
+      font-size: 300%; } }
+
+.header-inner .connect {
+  display: block;
+  width: 195px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #c52f30;
+  color: #cf2f32;
+  margin: 30px auto 0;
+  text-decoration: none;
+  -webkit-transition: background 0.4s ease, color 0.4s ease;
+  -moz-transition: background 0.4s ease, color 0.4s ease;
+  -o-transition: background 0.4s ease, color 0.4s ease;
+  -ms-transition: background 0.4s ease, color 0.4s ease;
+  transition: background 0.4s ease, color 0.4s ease; }
+  .header-inner .connect:hover {
+    background: #cf2f32;
+    color: white;
+    -webkit-transition: background 0.4s ease, color 0.4s ease;
+    -moz-transition: background 0.4s ease, color 0.4s ease;
+    -o-transition: background 0.4s ease, color 0.4s ease;
+    -ms-transition: background 0.4s ease, color 0.4s ease;
+    transition: background 0.4s ease, color 0.4s ease; }
+
+.xmas-tree-bottom {
+  display: none;
+  margin: 30px auto 0; }
+  @media screen and (min-width: 1050px) {
+    .xmas-tree-bottom {
+      display: block; } }
+
+.main {
+  background: #e9e9e9; }
+  .main .content {
+    width: 100%;
+    margin: 0 auto; }
+    @media screen and (min-width: 1050px) {
+      .main .content {
+        width: 1000px; } }
+    .main .content .message-box {
+      width: 100%;
+      padding: 30px 15px; }
+      @media screen and (min-width: 1050px) {
+        .main .content .message-box {
+          float: left;
+          width: 50%; } }
+      .main .content .message-box .date-time {
+        font-weight: 400;
+        color: #9d9d9d; }
+      .main .content .message-box .message {
+        padding: 20px;
+        height: auto;
+        border-radius: 3px;
+        background: white;
+        text-align: center; }
+        @media screen and (min-width: 520px) {
+          .main .content .message-box .message {
+            text-align: left; } }
+        @media screen and (min-width: 1050px) {
+          .main .content .message-box .message {
+            height: 175px; } }
+        .main .content .message-box .message:before {
+          content: "";
+          position: absolute;
+          left: 20px;
+          top: -20px;
+          border: 10px solid transparent;
+          border-bottom: 10px solid white; }
+        .main .content .message-box .message .message-image {
+          border-radius: 50%;
+          width: auto;
+          max-width: 99px;
+          height: auto;
+          float: none; }
+          @media screen and (min-width: 520px) {
+            .main .content .message-box .message .message-image {
+              float: left; } }
+        .main .content .message-box .message .message-content {
+          width: 100%;
+          color: #9d9d9d; }
+          @media screen and (min-width: 520px) {
+            .main .content .message-box .message .message-content {
+              width: 75%;
+              float: right; } }
+          @media screen and (min-width: 760px) {
+            .main .content .message-box .message .message-content {
+              width: 85%; } }
+          @media screen and (min-width: 1050px) {
+            .main .content .message-box .message .message-content {
+              width: 75%; } }
+          .main .content .message-box .message .message-content a {
+            color: #42a747; }
+            .main .content .message-box .message .message-content a:hover {
+              color: #cf2f32; }
+          .main .content .message-box .message .message-content h3, .main .content .message-box .message .message-content p, .main .content .message-box .message .message-content div {
+            margin: 0; }
+          .main .content .message-box .message .message-content h3 {
+            font-family: "Josefin Slab", serif;
+            font-size: 200%;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: black; }
+          .main .content .message-box .message .message-content p {
+            color: #cf2f32;
+            font-weight: 600; }
+          .main .content .message-box .message .message-content div {
+            margin-top: 10px;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis; }
+
+footer {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  background: white; }
+  footer h4 {
+    margin-top: 0px;
+    font-family: "Josefin Slab", serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #727272; }
+  footer .connect-box {
+    width: 100%;
+    margin: 0 auto; }
+    @media screen and (min-width: 760px) {
+      footer .connect-box {
+        width: 525px; } }
+  footer .connected-as, footer .connect-message {
+    background: #F7F7F7; }
+  footer .connected-as {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid white;
+    text-align: left;
+    padding: 5px 20px; }
+    footer .connected-as .connected-image {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 5px; }
+    footer .connected-as span {
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      color: #727272; }
+    footer .connected-as .disconnect {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      padding: 5px 10px;
+      margin-top: 3px;
+      border-radius: 20px;
+      background: white;
+      text-decoration: none;
+      color: #727272;
+      text-transform: uppercase;
+      font-size: 80%; }
+      footer .connected-as .disconnect:hover {
+        background: #cf2f32;
+        color: white; }
+      @media screen and (min-width: 520px) {
+        footer .connected-as .disconnect {
+          position: static;
+          float: right; } }
+  footer .connect-message {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    footer .connect-message textarea {
+      border: none;
+      background: transparent;
+      width: 100%;
+      height: 130px;
+      padding: 20px;
+      -webkit-transition: box-shadow 0.4s ease;
+      -moz-transition: box-shadow 0.4s ease;
+      -o-transition: box-shadow 0.4s ease;
+      -ms-transition: box-shadow 0.4s ease;
+      transition: box-shadow 0.4s ease; }
+      footer .connect-message textarea:focus {
+        outline: none;
+        -webkit-box-shadow: inset 0px 0px 20px #d0d0d0;
+        box-shadow: inset 0px 0px 20px #d0d0d0;
+        -webkit-transition: box-shadow 0.4s ease;
+        -moz-transition: box-shadow 0.4s ease;
+        -o-transition: box-shadow 0.4s ease;
+        -ms-transition: box-shadow 0.4s ease;
+        transition: box-shadow 0.4s ease; }
+  footer .post-btn {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #42a747;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    footer .post-btn:hover {
+      background: #5dbf62;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+  footer .social-buttons {
+    padding-left: 0px;
+    margin-top: 20px; }
+    @media screen and (min-width: 760px) {
+      footer .social-buttons {
+        padding: 30px 0 30px 117px;
+        margin-top: 0px; } }
+    footer .social-buttons .social-btn {
+      padding: 5px 14px;
+      width: 100%;
+      display: block;
+      margin: 5px 0;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 70%; }
+      @media screen and (min-width: 760px) {
+        footer .social-buttons .social-btn {
+          float: left;
+          margin: 5px;
+          padding: 5px 20px;
+          width: auto; } }
+    footer .social-buttons .twitter {
+      background: #00acee; }
+      footer .social-buttons .twitter:hover {
+        background: #22c2ff; }
+    footer .social-buttons .facebook {
+      background: #3b5998; }
+      footer .social-buttons .facebook:hover {
+        background: #4c70ba; }
+  footer .copyright {
+    font-size: 90%;
+    color: #727272; }
+    @media screen and (min-width: 760px) {
+      footer .copyright {
+        font-size: 100%; } }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
